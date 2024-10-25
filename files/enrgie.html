@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dark</title>
+    <link rel="stylesheet" href="../soca-strap/soca-style.css">
+    <link rel="stylesheet" href="../docu.css">
+    <link rel="stylesheet" href="../soca-strap/animate.css">
+    <script src="../soca-strap/wow-animation.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        color: white;
+    }
+
+    .circle {
+        background-image: url(../image/geometrie.gif);
+
+    }
+
+    audio {
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .w-70 {
+        width: 70%;
+    }
+</style>
+
+<body>
+    <audio id="ss" controls>
+        <source src="/fortex.mp3" type="audio/mp3">
+    </audio>
+    <div class="display-f ">
+        <div class="text w-70 font-2 m-2 ">
+
+            <h2>
+               
+              
+
+                <br> <br>
+                <span class="wow bounceInDown center" data-wow-delay="1s">
+
+                   <span class="red"> #Énergie solaire </span>
+                    L'énergie solaire est constamment renouvelée au lever du soleil, ce qui active les cellules du corps et augmente son énergie et sa concentration. Chevaucher
+                    Énergie d'ombre résultant de la collision de la lumière avec la matière noire avec ce que l'on appelle la force d'énergie nulle, qui est l'énergie physique
+                    Cela indique l’unité de Dieu Tout-Puissant.
+
+                </span>
+
+
+                <br><br>
+                <span class="wow bounceInDown center" data-wow-delay="2s">
+
+                   <span class="red">## Énergie froide</span> 
+                    - <span class="green"> **Définition**</span> : L'énergie froide est l'opposé de l'énergie thermique et elle n'est pas largement reconnue dans la recherche scientifique.
+                    - <span class="sky"> **Attention**</span> : Il faut faire attention à ne pas le confondre avec une fausse spiritualité, comme le yoga et les chakras, qui conduisent à...
+                    Polythéisme.
+                    - **Zéro absolu** : à <span class="sky">-273 D</span>
+                </span>
+
+            </h2>
+        </div>
+        <div class="img  display-f flex-c items-end justify-end">
+            <img class="wow bounceInDown center w-6 h-6 round-2" data-wow-delay="2s" src="../image/sun.gif" alt="">
+            <br>
+            <img class="w-6 h-6 round wow bounceInUp round-2" data-wow-delay="3s" src="../image/fire.gif" alt="">
+
+
+        </div>
+
+    </div>
+
+</body>
+<script>
+    document.addEventListener("keydown", function (a) {
+        var ss = document.getElementById("ss")
+        if (a.key === "ArrowRight") {
+            window.location.href = "../index.html"
+        }
+        if (a.key === "a") {
+            ss.play()
+        }
+        if (a.key === "s") {
+            ss.pause()
+        }
+    })
+</script>
+
+</html>
