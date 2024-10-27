@@ -21,46 +21,69 @@
             background-blend-mode: darken;
             display: flex;
             flex-direction: column;
+            height: 100%;
             align-items: center;
+            color: white;
+            padding: 20px;
         }
 
-        ::-webkit-scrollbar {
-            width: 0px;
+
+
+        img {
+            width: 10%;
+            margin: 10px;
         }
 
-        .m-t {
-            margin-top: 20px;
+        .items-center {
+            border: 4px solid teal;
+            padding: 10px;
         }
 
-        .m-l {
-            margin-left: 20px;
-        }
+        @media (max-width: 1100px) {
+            .items-center {
+                flex-direction: column;
+            }
 
-        .img1 {
-            background-image: url(image/electrique.gif);
-            background-size: cover;
-            width: 200px;
-            height: 200px;
-            display: block;
-        }
-
-        .w-h {
-            width: 70%;
-            line-height: 40px;
-        }
-
-        .border-2:hover {
-            border: skyblue 3px solid;
+            img {
+                width: 40%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <br><br><br>
-    <div id="cont" class="container display-f items-center"></div>
-    <div id="cont2" class="container display-f items-center"></div>
-    <div id="cont4" class="display-f items-center ">
-        <div id="cont3" class="display-f flex-c "></div>
+    <h1 class="font-2 red wow bounceInDown center">INTRODUCTION</h1><br><br>
+    <h3 class="font-2  wow bounceInDown center"> <span class="sky"> Dans les profondeurs</span> du monde interdit, où
+        s'entrelacent les fils du mythe et de la vérité, nous nous
+        retrouvons confrontés à de profondes questions sur les sciences mystérieuses qui ont été ignorées ou
+        marginalisées à travers les âges. Ces sciences, qui peuvent paraître fantaisistes ou absurdes, portent en elles
+        des secrets qui peuvent changer notre compréhension de la réalité
+    </h3 class="font-2">
+    <br>
+    <div class="display-f items-center wow bounceInDown center" data-wow-delay="0.4s">
+        <h3 class="font-2">
+            <span class="sky">Il existe</span> des preuves que des civilisations telles que les anciens Égyptiens ou les
+            Incas
+            possédaient une technologie très avancée, peut-être au-delà de ce que nous connaissons aujourd'hui, mais ces
+            connaissances ont été perdues ou cachées.
+        </h3>
+        <img src="image/fortex.gif" alt="">
+    </div>
+    <br>
+    <div class="display-f items-center wow bounceInDown center" data-wow-delay="0.7s">
+        <h3 class="font-2"> <span class="sky">Pour</span> des raisons complexes et difficiles à expliquer aujourd’hui,
+            la vérité est peut-être
+            plus complexe que nous l’imaginons, et certaines connaissances ne sont accessibles qu’à ceux qui les
+            recherchent
+            de manière non conventionnelle. Ce qui est enseigné dans les écoles ne constitue qu’une petite partie d’un
+            ensemble plus vaste et a été mélangé à du poison et à des mensonges pour servir certains programmes. Les
+            sciences cachées ne sont apprises que par quelques-uns, et sensibiliser les gens est notre devoir.
+        </h3>
+        <img src="image/light.gif" alt="">
+
+    </div>
+
+
 
     </div>
 
@@ -68,43 +91,12 @@
 
 <script>
     document.addEventListener("keydown", function (a) {
-        var cont = document.getElementById('cont');
-        var cont2 = document.getElementById('cont2');
-        var cont3 = document.getElementById('cont3');
-        var cont4 = document.getElementById('cont4');
 
-        if (a.key === "a") {
-            var eleem = document.createElement('h1');
-            eleem.textContent = 'INTRODUCTION';  // Set text content
-            eleem.classList.add('font-2', 'red', 'wow', 'bounceInDown', 'center');  // Add classes to the element
-            cont.appendChild(eleem);  // Append to the container
-            var eleem = document.createElement('h3');
-            eleem.textContent = "Dans les profondeurs du monde interdit, où s'entrelacent les fils du mythe et de la vérité, nous nous retrouvons confrontés à de profondes questions sur les sciences mystérieuses qui ont été ignorées ou marginalisées à travers les âges. Ces sciences, qui peuvent paraître fantaisistes ou absurdes, portent en elles des secrets qui peuvent changer notre compréhension de la réalité."
-            eleem.classList.add('font-2', 'white', 'wow', 'bounceInDown', 'center', 'm-l');
-            cont.appendChild(eleem);
 
-        }
-        if (a.key === "s") {
-            var bb = document.createElement('h3');
-            bb.textContent = "Il existe des preuves que des civilisations telles que les anciens Égyptiens ou les Incas possédaient une technologie très avancée, peut-être au-delà de ce que nous connaissons aujourd'hui, mais ces connaissances ont été perdues ou cachées."
-            bb.classList.add('font-2', 'white', 'wow', 'bounceInDown', 'center', 'm-l');
-            cont2.appendChild(bb);
-        }
 
-        if (a.key === "d") {
-            var bb = document.createElement('img');
-            bb.src = 'image/fire.gif';
-            bb.classList.add('font-2', 'white', 'wow', 'bounceInDown', 'center', 'm-l', 'img1', 'm-1', 'round');
-            cont3.appendChild(bb);
-            var bb = document.createElement('img');
-            bb.src = 'image/fortex.gif';
-            bb.classList.add('font-2', 'white', 'wow', 'bounceInDown', 'center', 'm-l', 'img1', 'm-1', 'round');
-            cont3.appendChild(bb);
-            var bb = document.createElement('h3');
-            bb.textContent = "Pour des raisons complexes et difficiles à expliquer aujourd’hui, la vérité est peut-être plus complexe que nous l’imaginons, et certaines connaissances ne sont accessibles qu’à ceux qui les recherchent de manière non conventionnelle. Ce qui est enseigné dans les écoles ne constitue qu’une petite partie d’un ensemble plus vaste et a été mélangé à du poison et à des mensonges pour servir certains programmes. Les sciences cachées ne sont apprises que par quelques-uns, et sensibiliser les gens est notre devoir."
-            bb.classList.add('font-2', 'white', 'wow', 'bounceInDown', 'center', 'm-l', 'w-h', 'border-2', 'p-1');
-            cont4.appendChild(bb);
-        }
+
+
+
 
         if (a.key === "ArrowRight") {
             window.location.href = "index.html"

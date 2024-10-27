@@ -26,16 +26,34 @@
         background-blend-mode: darken;
         color: white;
         overflow: hidden;
+        height: 100%;
     }
 
     .circle {
         background-image: url(../image/geometrie.gif);
 
     }
+    @media (max-width: 1100px) {
+        .gg {
+            flex-direction: column;
+            h3{
+                width: 100%;
+            }
+        }
+body{
+    overflow-y: scroll;
+}
+        .d2 {
+            flex-direction: column;
+            h2{
+                width: 100%;
+            }
+        }
+    }
 </style>
 
 <body>
-    <div class="container display-f items-center justify-center">
+    <div class="container gg display-f items-center justify-center">
         <div class="circle">
             <h1 class="font-2">geometrie</h1>
         </div>
