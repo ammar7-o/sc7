@@ -44,6 +44,12 @@
         width: 100%;
     }
 
+    audio {
+        display: none;
+    }
+::-webkit-scrollbar{
+    background-color: red;
+}
     @media (max-width: 1100px) {
         .display-f {
             flex-direction: column;
@@ -52,11 +58,16 @@
                 width: 50%;
             }
         }
-
+        audio {
+        display: block;
+    }
     }
 </style>
 
 <body class="font-2">
+    <audio id="ss" controls>
+        <source src="../sounds/dark.mp3" type="audio/mp3">
+    </audio>
     <div class="display-f items-center">
         <h3 class="wow bounceInDown center" data-wow-delay="1s">
             <span class="red"> ### Lumière noire</span> La lumière noire est un type particulier de rayonnement
@@ -121,9 +132,21 @@
         <img class=" round wow bounceInUp" data-wow-delay="3s" src="../image/ether.gif" alt="">
 
     </div>
+  
 </body>
 <script>
-
+    document.addEventListener("keydown", function (a) {
+        var ss = document.getElementById("ss")
+        if (a.key === "ArrowRight") {
+            window.location.href = "../index.html"
+        }
+        if (a.key === "a") {
+            ss.play()
+        }
+        if (a.key === "s") {
+            ss.pause()
+        }
+    })
 </script>
 
 </html>

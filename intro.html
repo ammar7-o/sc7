@@ -39,6 +39,10 @@
             padding: 10px;
         }
 
+        audio {
+            display: none;
+        }
+
         @media (max-width: 1100px) {
             .items-center {
                 flex-direction: column;
@@ -47,11 +51,18 @@
             img {
                 width: 40%;
             }
+
+            audio {
+                display: block;
+            }
         }
     </style>
 </head>
 
 <body>
+    <audio id="ss" controls>
+        <source src="sounds/intro.mp3" type="audio/mp3">
+    </audio>
     <h1 class="font-2 red wow bounceInDown center">INTRODUCTION</h1><br><br>
     <h3 class="font-2  wow bounceInDown center"> <span class="sky"> Dans les profondeurs</span> du monde interdit, où
         s'entrelacent les fils du mythe et de la vérité, nous nous
@@ -86,22 +97,22 @@
 
 
     </div>
-
+   
 </body>
 
 <script>
     document.addEventListener("keydown", function (a) {
-
-
-
-
-
-
-
+        var ss = document.getElementById("ss")
         if (a.key === "ArrowRight") {
-            window.location.href = "index.html"
+            window.location.href = "../index.html"
         }
-    });
+        if (a.key === "a") {
+            ss.play()
+        }
+        if (a.key === "s") {
+            ss.pause()
+        }
+    })
 </script>
 
 </html>

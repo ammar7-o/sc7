@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dark</title>
+    <title>wather</title>
     <link rel="stylesheet" href="../soca-strap/soca-style.css">
     <link rel="stylesheet" href="../docu.css">
     <link rel="stylesheet" href="../soca-strap/animate.css">
@@ -93,10 +93,15 @@
                 width: 50%;
             }
         }
-
+        audio{
+                display: block;
+            }
     }
 </style>
 <body class="font-2">
+    <audio id="ss" controls>
+        <source src="../sounds/wather.mp3" type="audio/mp3">
+    </audio>
     <div class="display-f items-center">
         <h3 class="wow bounceInDown center" data-wow-delay="1s">
         
@@ -151,7 +156,7 @@
             </h3>
             
     </div>
-
+  
 </body>
 <script>
     document.addEventListener("keydown", function (a) {
